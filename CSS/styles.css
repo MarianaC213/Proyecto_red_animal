@@ -1,0 +1,189 @@
+*{
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  align-content: center;
+  flex-direction: row;
+}
+title{
+  display: none;
+}
+body{
+  width: 100%;
+  flex-direction: column;
+}
+header{
+  height: 15vh;
+  width: 100%;
+}
+.barras{
+  display: inline;
+  height: 100%;
+  width: 100%;
+}
+.barra_superior{
+  text-align: right;
+  display: inline-block;
+  height: 33%;
+  width: 100%;
+}
+.elemento_barra_sup{
+  display: inline;
+}
+.logo{
+  width: 20vw;
+  height:100%;
+}
+.menu_principal{
+  width: 100%;
+  height: 67%;
+  background-color: grey;
+  margin: 0 0;
+}
+nav{
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+}
+.link{
+  text-align: center;
+  padding: 5px 5px;
+}
+main{
+  background-color: orange;
+  width:100%;
+  height: 400vh;
+  display: block;
+}
+img{
+  width: 100%;
+  height: 100%;
+}
+.aviso{
+align-items: center;
+}
+.aviso img{
+  width: 100%;
+  height: auto;
+
+}
+@supports(object-fit: cover){
+    .aviso img{
+      height: 55%;
+      object-fit: cover;
+      object-position: center center;
+    }
+}
+}
+#banner{
+  background-color: green;
+  height: 80vh;
+  width: 100%;
+  padding: 0% 0%;
+  margin: 1% 0%;
+
+}
+
+
+.adopciones{
+  height: 10vh;
+  width: 100%;
+  background-color: white;
+}
+#adopciones_galeria{
+  background-color: blue;
+  height: 58vh;
+  width: 100%;
+  padding: 0% 0%;
+  margin: 0% 0%;
+  flex-flow: column wrap;
+  justify-content: space-around;
+}
+.imagen_adopciones{
+  display: block;
+  background-color: grey;
+  height: 50vh;
+  width: 18vw;
+  margin: 4px;
+  align-content: center;
+}
+.perdidos_y_encontrados{
+  height: 10vh;
+  width: 100%;
+  background-color: white;
+}
+#perdidos_galeria{
+  background-color: red;
+  height: 58vh;
+  width: 100%;
+  padding: 0% 0%;
+  margin: 0% 0%;
+  flex-flow: column wrap;
+  justify-content: space-around;
+}
+.imagen_perdidos{
+  display: block;
+  background-color: grey;
+  height: 50vh;
+  width: 18vw;
+  margin: 4px;
+  align-content: center;
+}
+.descripcion{
+  background-color: white;
+  text-align: center;
+  align-self: center;
+  height: 45%;
+  width: 100%;
+}
+#informacion{
+  background-color: white;
+  display: block;
+  height: 55vh;
+  width: 100%;
+}
+.donaciones{
+  display: block;
+  background-color: grey;
+  height: 58vh;
+  width: 48vw;
+}
+#donaciones_titulo{
+  height: 10vh;
+  width: 100%;
+  background-color: green;
+}
+footer{
+  background-color: black;
+  color: white;
+  height: 20vh;
+  width: 100%;
+  margin: 0% 0%;
+  padding: 0% 0%;
+  justify-content: space-around;
+}
+.redes{
+  height: 100%;
+  width: 33%;
+  padding: 5px 5px;
+  justify-content: flex-end;
+  align-self: flex-end;
+}
+.red1{
+  padding: 5px 5px;
+}
+@media only screen and (max-width:300px) {
+  .logo{
+    background-color: white;
+    width: 40vw;
+  }
+  .imagen{
+    background-color: darkred;
+    height: 15vh;
+    width: 98%;
+  }
+  .link{
+    display: none;
+  }
+}

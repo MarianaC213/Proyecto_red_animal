@@ -1,3 +1,4 @@
+/*TAMAÑO WEB*/
 *{
   box-sizing: border-box;
   display: flex;
@@ -6,17 +7,66 @@
   align-content: center;
   flex-direction: row;
 }
+
 title{
   display: none;
 }
 body{
   margin: 0px 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.contenedor{
+  margin: 0px 0px;
   width: 100%;
   flex-direction: column;
+  background-color: #EAEAEA;
 }
 header{
   height: 15vh;
   width: 100%;
+}
+.links_barra_1{
+   color: black;
+   font-weight: bold;
+   font-size: 0.8em;
+}
+.links_barra_2{
+  color: black;
+  font-weight: bold;
+}
+.links_3{
+  color: white;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.links_footer1{
+  color: white;
+  font-weight: bold;
+  font-size: 0.8em;
+}
+.links_footer2{
+  color: white;
+  font-weight: lighter;
+  font-size: 0.7em;
+}
+a:link, a:visited, a:active {
+    text-decoration:none;
+}
+.links_3:hover {
+ color: #659963;
+}
+.links_barra_1:hover {
+ color: #C8C8C8;
+}
+.links_barra_2:hover{
+  color: #4A4A4A;
+}
+.links_footer1:hover{
+  color: #C4C4C4;
+}
+.links_footer2:hover{
+  color: #C4C4C4;
 }
 .barras{
   display: inline;
@@ -24,23 +74,28 @@ header{
   width: 100%;
 }
 .barra_superior{
+  margin-top: 1%;
+  padding: 0% 1%;
   text-align: right;
   display: inline-block;
   height: 33%;
   width: 100%;
 }
 .elemento_barra_sup{
-  display: inline;
+  display: inline-flex;
+  align-self: baseline;
 }
 .logo{
   width: 20vw;
   height:100%;
+  display: none;
 }
 .menu_principal{
   width: 100%;
-  height: 67%;
-  background-color: grey;
+  height: 55%;
+  background-color: #939090;
   margin: 0 0;
+  padding: 0% 1%;
 }
 nav{
   width: 100%;
@@ -52,48 +107,175 @@ nav{
   padding: 5px 5px;
 }
 main{
-  background-color: orange;
+  background-color: #EAEAEA;
   width:100%;
-  height: 400vh;
+  height: 350%;
   display: block;
 }
 img{
   width: 100%;
   height: 100%;
 }
-.aviso{
-align-items: center;
-}
 .aviso img{
   width: 100%;
   height: auto;
-
 }
+.aviso:hover {
+  border: 2px solid #939090;
+  border-radius: 10px 10px 10px 10px;
+}
+
 @supports(object-fit: cover){
     .aviso img{
       height: 55%;
       object-fit: cover;
       object-position: center center;
     }
+    .foto-banner{
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+    }
+    .trebol1{
+      object-fit: cover;
+      object-position: center center;
+    }
+    .trebol2{
+      object-fit: cover;
+      object-position: center center;
+    }
+    .trebol3{
+      object-fit: cover;
+      object-position: center center;
+    }
 }
+.foto-banner{
+  height: 100vh;
+  width: 100%;
 }
-#banner{
-  background-color: green;
-  height: 80vh;
+.banner{
+  height: auto;
   width: 100%;
   padding: 0% 0%;
-  margin: 1% 0%;
-
+  margin-top: 0%;
+  margin-left: 0%;
+  margin-right: 0%;
+  margin-bottom: 1%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
-
-.adopciones{
-  height: 10vh;
+.banner-text {
+  position: absolute;
+  height: 100%;
   width: 100%;
-  background-color: white;
+  top: 15%;
+  left: 0%;
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+.titulo-treboles {
+  position: absolute;
+  top: 15%;
+  left: 3%;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 33%;
+  width: 45%;
+  padding: 0% 0%;
+}
+.div-titulo{
+  align-items: baseline;
+  height: auto;
+  width: auto;
+}
+.treboles{
+  flex-direction: row;
+  position: absolute;
+  top: 15%;
+  left: 35%;
+  height: auto;
+  width: auto;
+}
+.trebol1{
+  height: 8vh;
+  width: 4vw;
+}
+.trebol2{
+  height: 8vh;
+  width: 4vw;
+}
+.trebol3{
+  height: 8vh;
+  width: 4vw;
+}
+.titulo-principal{
+  position: absolute;
+  top: 5%;
+  left: 0%;
+  font-size: 500%;
+  font-weight: bold;
+  height: 100%;
+  width: 80%;
+  margin: 0% 0%;
+  padding: 0% 0%;
+}
+.p-titulo-boton{
+  position: absolute;
+  top: 55%;
+  justify-content: flex-start;
+  display: inline;
+  height: 40%;
+  width: 40%;
+  padding: 0% 5%;
+}
+.p-titulo-principal{
+  position: absolute;
+  justify-content: flex-start;
+  font-size: 180%;
+  font-weight: bold;
+  height: 40%;
+  width: 80%;
+  padding: 0% 0%;
+  margin: 0% 0%;
+}
+.boton-donar{
+  position: absolute;
+  top: 60%;
+  left:
+  margin: 0% 0%;
+  padding: 1% 10%;
+  background-color: #06A103;
+  border-color: #06A103;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+.boton-donar:hover{
+  background-color: #03AD00;
+}
+.aviso{
+  align-items: center;
+}
+ .p_aviso{
+   font-size: 0.9em;
+ }
+.adopciones{
+  color: white;
+  height: 10vh;
+  width: auto;
+  background-color: #1F491B;
+  margin-left: 2%;
+  margin-right: 2%;
+  border-radius: 8px;
 }
 #adopciones_galeria{
-  background-color: blue;
+  background-color: #EAEAEA;
   height: 58vh;
   width: 100%;
   padding: 0% 0%;
@@ -103,19 +285,26 @@ align-items: center;
 }
 .imagen_adopciones{
   display: block;
-  background-color: grey;
+  background-color: #EAEAEA;
   height: 50vh;
   width: 18vw;
   margin: 4px;
   align-content: center;
 }
+.imagen_adopciones img{
+  border-radius: 10px 10px 0px 0px;
+}
 .perdidos_y_encontrados{
+  color: white;
   height: 10vh;
-  width: 100%;
-  background-color: white;
+  width: auto;
+  background-color: #1F491B;
+  margin-left: 2%;
+  margin-right: 2%;
+  border-radius: 8px;
 }
 #perdidos_galeria{
-  background-color: red;
+  background-color: #EAEAEA;
   height: 58vh;
   width: 100%;
   padding: 0% 0%;
@@ -125,11 +314,15 @@ align-items: center;
 }
 .imagen_perdidos{
   display: block;
-  background-color: grey;
+  background-color: #EAEAEA;
   height: 50vh;
   width: 18vw;
   margin: 4px;
   align-content: center;
+
+}
+.imagen_perdidos img {
+  border-radius: 10px 10px 0px 0px;
 }
 .descripcion{
   background-color: white;
@@ -137,26 +330,62 @@ align-items: center;
   align-self: center;
   height: 45%;
   width: 100%;
+  border-radius: 0px 0px 10px 10px;
 }
-#informacion{
-  background-color: white;
+.textos{
   display: block;
-  height: 55vh;
+}
+.informacion{
+  background-color: #EAEAEA;
+  display: block;
+  height: 60%;
   width: 100%;
+  padding: 2% 5%;
 }
-.donaciones{
+.info1{
+  margin: 5px 0px;
+}
+.p1{
+  font-size: 1em;
+}
+.div-boton{
+  margin-top: 2%;
+}
+.boton-2 {
+  padding: 3px 8px;
+  margin: 3px 0px;
+  background-color: #06A103;
+  border-color: #06A103;
+  border-radius: 5px;
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+}
+.boton-2:hover{
+  background-color: #03AD00;
+}
+.div-donaciones{
   display: block;
-  background-color: grey;
-  height: 58vh;
-  width: 48vw;
+  height: 10%;
+}
+.como_donar{
+  justify-content: center;
+  display: inline;
+  background-color: #EAEAEA;
+  height: 100%;
+  width: 90%;
 }
 #donaciones_titulo{
+  color: white;
   height: 10vh;
-  width: 100%;
-  background-color: green;
+  width: auto;
+  background-color: #1F491B;
+  margin-left: 2%;
+  margin-right: 2%;
+  border-radius: 8px;
 }
 footer{
-  background-color: black;
+  background-color: #393737;
   color: white;
   height: 20vh;
   width: 100%;
@@ -174,17 +403,196 @@ footer{
 .red1{
   padding: 5px 5px;
 }
-@media only screen and (max-width:300px) {
-  .logo{
-    background-color: white;
-    width: 40vw;
+
+
+/*TAMAÑO CELULAR*/
+
+
+
+@media only screen and (max-width:400px) {
+  body{
+    width: 100%;
   }
-  .imagen{
-    background-color: darkred;
-    height: 15vh;
-    width: 98%;
+  .contenedor{
+    width: 100%;
+    margin: 0px 0px;
+    flex-direction: column;
   }
-  .link{
+  main{
+    height: 95%;
+  }
+  header{
     display: none;
   }
-}
+
+  .banner img{
+   width: 100%;
+   height: auto;
+  }
+
+  .banner-text{
+  position: absolute;
+  height: 47%;
+  width: 100%;
+  top: 0%;
+  left: 0%;
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  }
+  .treboles{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top:10%;
+    left: 50%;
+    height: 50%;
+    width: 30%;
+  }
+  .trebol1{
+    margin: 0;
+    padding: 0;
+    height: 1px;
+    width: 1px;
+    display: none;
+  }
+  .trebol2{
+    height: ;
+    width: ;
+    display: none;
+  }
+  .trebol3{
+    height: 3px;
+    width: 3px;
+    display: none;
+  }
+  .titulo-principal{
+    font-size: 2.4em;
+    font-weight: bold;
+    height: 100%;
+    width: 100%;
+    margin: 2%;
+  }
+  .p-titulo-principal{
+    text-align: left;
+    font-size: 0.9em;
+    font-weight: bold;
+    height: 30%;
+    width: 100%;
+    margin: 1%;
+  }
+  .boton-donar{
+    margin: 0% 4%;
+    padding: 1% 10%;
+    background-color: #06A103;
+    border-color: #06A103;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+  }
+  .boton-donar:hover{
+    background-color: #03AD00;
+  }
+
+  @supports(object-fit: cover){
+     .banner img{
+       height: 35%;
+       object-fit: cover;
+       object-position: center center;
+     }
+      .trebol1 {
+        height: 100%;
+         object-fit: cover;
+         object-position: center center;
+       }
+       .trebol2{
+         object-fit: cover;
+         object-position: center center;
+       }
+       .trebol3{
+         object-fit: cover;
+         object-position: center center;
+       }
+   }
+   .links_3{
+     color: white;
+     font-weight: bold;
+     font-size: 1em;
+   }
+   .links_footer1{
+     color: white;
+     font-weight: bold;
+     font-size: 0.5em;
+   }
+   .links_footer2{
+     color: white;
+     font-weight: lighter;
+     font-size: 0.45em;
+   }
+  .adopciones{
+    width: auto;
+    margin-left: 2%;
+    margin-right: 2%;
+   }
+  .aviso{
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+   }
+   .descripcion{
+     background-color: #EAEAEA;
+   }
+
+  .imagen2{
+    display: none;
+  }
+  .perdidos_y_encontrados{
+    width: auto;
+    margin-left: 2%;
+    margin-right: 2%;
+   }
+  .imagen3{
+    display: none;
+  }
+
+  .imagen_adopciones{
+     width: 100%;
+     height: 100%;
+  }
+   .imagen_perdidos{
+     width: 100%;
+     height: 100%;
+   }
+   .descripcion{
+     height: 40%;
+     display: block;
+   }
+
+   .imagen_perro img{
+     height: 90vh;
+   }
+   #donaciones_titulo{
+     width: auto;
+     margin-left: 2%;
+     margin-right: 2%;
+   }
+   #informacion{
+    height: 90vh;
+    padding: 0px 20px;
+   }
+   footer{
+    height: 10vh;
+   }
+   .p1{
+     font-size: 0.9em;
+   }
+  .p_aviso{
+    height: 100%;
+    margin: 0%;
+    padding: 5%;
+    text-align: center;
+   }
